@@ -13,7 +13,9 @@ RUN apt-get update \
 RUN apt-get install -y \
        build-essential autoconf gcc libc6 make libgd-dev libmcrypt-dev libssl-dev \
        wget unzip bc gawk dc snmp libnet-snmp-perl gettext \
-       apache2 php libapache2-mod-php7.2
+       apache2 php libapache2-mod-php7.2 \
+       python python-pip \
+    && pip install supervisor
 
 RUN cd /tmp \
     && wget -O nagioscore.tar.gz https://github.com/NagiosEnterprises/nagioscore/archive/nagios-4.4.3.tar.gz \
