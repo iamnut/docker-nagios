@@ -1,4 +1,5 @@
 FROM ubuntu:18.04
+MAINTAINER Titiwut M. <public@iamnut.com>
 
 ENV TZ=Asia/Bangkok
 
